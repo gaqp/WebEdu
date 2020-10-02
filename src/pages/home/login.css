@@ -1,0 +1,60 @@
+#buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+#buttons Button {
+    margin-bottom: 10px;
+    border-radius: 20px;
+    width: 100%;
+}
+
+#buttons Button.btn-primary {
+    background-color: #443B8A;
+    font-weight: bold;
+}
+
+#buttons Button.btn-primary:hover {
+    transition-duration: 0.5s;
+    background-color: #6d5fdb;
+
+}
+
+#buttons Button.btn-secondary {
+    color: #A03254;
+    background-color: white;
+    border-color: #A03254;
+}
+
+#buttons Button.btn-secondary:hover {
+    transition-duration: 0.5s;
+    background-color: #A03254;
+    color: white
+}
+
+#formBasicPassword {
+    border-radius: 0px;
+    border-width: 0 0 2px;
+}
+
+#formBasicEmail {
+    border-radius: 0px;
+    border-width: 0 0 2px;
+}
+
+#formBasicEmail:focus {
+    box-shadow: none;
+    border-color: rgb(54, 45, 124);
+    
+}
+
+#formBasicPassword:focus {
+    box-shadow: none;
+    border-color: rgb(54, 45, 124);
+
+}
+
+.titleCadastro {
+    font-weight: bold;
+    color: rgb(54, 45, 124);
+}

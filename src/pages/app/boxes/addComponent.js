@@ -1,0 +1,108 @@
+import React, { useState, Component } from 'react';
+import Modal from 'react-bootstrap/Modal'
+import Button from 'react-bootstrap/Button'
+import { ADDAdministrador, ADDAluno, ADDDiretor, ADDEscola, ADDJovemACE, ADDPesquisador, ADDProfessor, ADDProfissionalEducacao, ADDProfissionalSaude, ADDQuiz } from './add'
+import './addComponent.css'
+
+import add_desafios from '../assets/add_desafios.svg';
+import add_escola from '../assets/add_escola.svg';
+import add_jovemACE from '../assets/add_jovemACE.svg';
+import add_pesquisador from '../assets/add_pesquisador.svg';
+import add_prof_educacao from '../assets/add_prof_educacao.svg';
+import add_prof_saude from '../assets/add_prof_saude.svg'
+import add_professor from '../assets/add_professor.svg'
+
+const opcoes = [
+    {
+        nome: "Administrador",
+        logo: add_escola,
+        box: ADDAdministrador
+    },
+    {
+        nome: "Aluno",
+        logo: add_escola,
+        box: ADDAluno
+    },
+    {
+        nome: "Diretor",
+        logo: add_escola,
+        box: ADDDiretor
+    },
+    {
+        nome: "Escola",
+        logo: add_escola,
+        box: ADDEscola
+    },
+    {
+        nome: "Professor",
+        logo: add_professor,
+        box: ADDProfessor
+    },
+    {
+        nome: "Jovem ACE",
+        logo: add_jovemACE,
+        box: ADDJovemACE
+    },
+    {
+        nome: "Profissional de Saúde",
+        logo: add_prof_saude,
+        box: ADDProfissionalSaude
+    },
+    {
+        nome: "Profissional de Educação",
+        logo: add_prof_educacao,
+        box: ADDProfissionalEducacao
+    },
+    {
+        nome: "Pesquisador",
+        logo: add_pesquisador,
+        box: ADDPesquisador
+    },
+    {
+        nome: "Desafios",
+        logo: add_desafios,
+        box: ADDQuiz
+    },
+]
+function Example(moduleToShow) {
+
+
+
+    return (
+        <>
+
+        </>
+    );
+}
+
+export default class addComponent extends Component {
+    constructor(props) {
+        super(props)
+        this.state = { show: true, componentToShow: ADDEscola }
+    }
+    render() {
+        return (
+            <div id="addBlockBody">
+                <h1 id="addBlockTitle"><strong>Indique o que deseja adicionar :</strong></h1>
+                <div id="options">
+                    {opcoes.map(opcao => {
+                        return (
+                            <div id="addBlock" key={opcao.nome}>
+                                <button id="addBlock" onClick={() => {
+                                    this.setState({show:true,componentToShow:opcao.box})
+                                }}>
+                                    <img src={opcao.logo} alt={opcao.nome} />
+                                </button>
+                                <p><strong>{opcao.nome}</strong></p>
+                            </div>
+                        )
+                    }
+                    )}
+                </div>
+                <Modal show={this.state.show} onHide={() => this.setState({ show: false })} size="xl">
+                    <this.state.componentToShow></this.state.componentToShow>
+                </Modal>
+            </div>
+        )
+    }
+}
