@@ -5,16 +5,12 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Home from "./pages/home/home.js";
 import AppBody from './pages/app/appBody';
 import Sidebar from "./pages/app/sidebar.js";
-import {ADDPesquisador} from './pages/app/boxes/add.js'
 
 
 const Routes = () => {
   return (
     <BrowserRouter>
       <Switch>
-        <Route exact path="/"
-          render={(props) => <ADDPesquisador/>}
-        />
 
         <Route exact path="/"
           render={(props) => <Home {...props} name="" />}
