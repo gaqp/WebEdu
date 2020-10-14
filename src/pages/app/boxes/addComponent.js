@@ -1,6 +1,5 @@
-import React, { useState, Component } from 'react';
+import React, {  Component } from 'react';
 import Modal from 'react-bootstrap/Modal'
-import Button from 'react-bootstrap/Button'
 import { ADDAdministrador, ADDAluno, ADDDiretor, ADDEscola, ADDJovemACE, ADDPesquisador, ADDProfessor, ADDProfissionalEducacao, ADDProfissionalSaude, ADDQuiz } from './add'
 import './addComponent.css'
 
@@ -64,21 +63,11 @@ const opcoes = [
         box: ADDQuiz
     },
 ]
-function Example(moduleToShow) {
-
-
-
-    return (
-        <>
-
-        </>
-    );
-}
 
 export default class addComponent extends Component {
     constructor(props) {
         super(props)
-        this.state = { show: true, componentToShow: ADDEscola }
+        this.state = { show: false, componentToShow: ADDEscola }
     }
     render() {
         return (
