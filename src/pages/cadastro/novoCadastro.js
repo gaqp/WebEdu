@@ -9,6 +9,8 @@ import './cadastro.css'
 import api from '../../services/api'
 //import API from '../../services/api'
 
+import success from './assets/success.svg'
+
 
 
 export default class Cadastro extends Component {
@@ -56,7 +58,6 @@ export default class Cadastro extends Component {
                 break;
 
         }
-        console.log(this.props.role)
     }
 
     async handleRoleChange(event) {
@@ -198,7 +199,13 @@ export default class Cadastro extends Component {
                             </Form.Control>
                         </Form.Group>
                     </Form>
-                    <Row id="formRoleNextRow">
+                    <Row id="cadButtons">
+                        <Button
+                            className="cadButton"
+                            onClick={
+                                () => this.props.modalShow()
+                            }
+                        >Voltar</Button>
                         <Button onClick={() => {
                             this.setState({ step: 1 })
                         }}
@@ -212,7 +219,7 @@ export default class Cadastro extends Component {
         }
         else if (this.state.step === 1) {
             return (
-                <React.Fragment>
+                <div id="cadBody">
                     <h1><span id="cadTitle">{this.state.titleName} </span> <span id="cadDivisor"> | </span> <span id="cadDescription">
                         {(this.state.role === "aluno" && "Aluno")
                             || (this.state.role === "jovem_ace" && "Jovem ACE")
@@ -511,15 +518,27 @@ export default class Cadastro extends Component {
                                 </Form>
                             )}
                     </Formik>
-                </React.Fragment>
+                </div>
 
             )
         }
         else if (this.state.step === 2) {
             return (
-                <h1>
-                    Cadastro concluído com sucesso!
-                </h1>
+                <div id="successCad">
+                    <h1 id="successHeader">
+                        Cadastro concluído com sucesso!
+                    </h1>
+                    <img
+                        src={success}
+                        id="successIcon"
+                        alt="Cadastro Concluído com sucesso" />
+                    <Button
+                        className="cadButton"
+                        onClick={
+                            () => this.props.modalShow()
+                        }
+                    >Finalizar</Button>
+                </div >
             )
         }
     }

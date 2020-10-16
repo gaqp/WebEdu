@@ -52,3 +52,7 @@ div#addBlock p{
     margin-right: auto;
     text-align: center;
 }
+div.modal-header{
+    padding: 10px 1rem;
+    border-bottom: 0px;
+}

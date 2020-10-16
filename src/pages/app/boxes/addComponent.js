@@ -1,4 +1,4 @@
-import React, {  Component } from 'react';
+import React, { Component } from 'react';
 import Modal from 'react-bootstrap/Modal'
 import { ADDAdministrador, ADDAluno, ADDDiretor, ADDEscola, ADDJovemACE, ADDPesquisador, ADDProfessor, ADDProfissionalEducacao, ADDProfissionalSaude, ADDQuiz } from './add'
 import './addComponent.css'
@@ -68,6 +68,14 @@ export default class addComponent extends Component {
     constructor(props) {
         super(props)
         this.state = { show: false, componentToShow: ADDEscola }
+        this.closeModal = this.closeModal.bind(this)
+        this.showModal = this.showModal.bind(this)
+    }
+    closeModal() {
+        this.setState({ show: false })
+    }
+    showModal() {
+        this.setState({ show: true });
     }
     render() {
         return (
@@ -78,7 +86,7 @@ export default class addComponent extends Component {
                         return (
                             <div id="addBlock" key={opcao.nome}>
                                 <button id="addBlock" onClick={() => {
-                                    this.setState({show:true,componentToShow:opcao.box})
+                                    this.setState({ show: true, componentToShow: opcao.box })
                                 }}>
                                     <img src={opcao.logo} alt={opcao.nome} />
                                 </button>
@@ -88,7 +96,8 @@ export default class addComponent extends Component {
                     }
                     )}
                 </div>
-                <Modal show={this.state.show} onHide={() => this.setState({ show: false })} size="xl">
+                <Modal show={this.state.show} onHide={() => this.closeModal()} size="xl">
+                    <Modal.Header closeButton/>
                     <this.state.componentToShow></this.state.componentToShow>
                 </Modal>
             </div>

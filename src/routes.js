@@ -3,6 +3,7 @@ import React from "react";
 import { HashRouter, Switch, Route } from "react-router-dom";
 
 import Home from "./pages/home/home.js";
+import EditarEscola from "./editar.js";
 import AppBody from './pages/app/appBody';
 import Sidebar from "./pages/app/sidebar.js";
 
@@ -11,7 +12,9 @@ const Routes = () => {
   return (
     <HashRouter basename='/'>
       <Switch>
-
+      <Route exact path="/"
+          render={(props) => <EditarEscola/>}
+        />
         <Route exact path="/"
           render={(props) => <Home {...props} name="" />}
         />

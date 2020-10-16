@@ -48,7 +48,7 @@ export default class Login extends Component {
 
         return (
             <React.Fragment>
-                <Form onSubmit={this.handleSubmit} action="https://backedu.azurewebsites.net/signin" method="POST" >
+                <Form onSubmit={this.handleSubmit} action="http://localhost:3001/signin" method="POST" >
                     <Form.Group controlId="formBasicEmail">
                         <Form.Control type="email" placeholder="Login" value={this.state.email} onChange={this.handleChange} name='email' />
                     </Form.Group>
@@ -66,7 +66,7 @@ export default class Login extends Component {
 
                 <p>Não possui conta? <Button className="signupButton" variant="link" onClick={this.handleShow}>Cadastre-se</Button></p>
                 <Modal size="lg" show={this.state.showCadastro} onHide={this.handleClose}>
-                    <Modal.Body><Cadastro /></Modal.Body>
+                    <Modal.Body><Cadastro modalShow={() =>this.handleClose()} /></Modal.Body>
                 </Modal>
             </React.Fragment>
         );
