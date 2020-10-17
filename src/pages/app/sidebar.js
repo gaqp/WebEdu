@@ -6,16 +6,16 @@ import welcomeBox from './boxes/welcomeBox'
 function setType(type) {
     switch (type) {
         case ("Administrador"):
-            return sidebar.admin;
+            return sidebar.admin
 
         case ("Professor"):
-            return sidebar.teacher;
+            return sidebar.teacher
 
         case ("Jovem ACE"):
-            return sidebar.ace;
+            return sidebar.ace
 
         default:
-            return sidebar.ace;
+            return sidebar.ace
 
     };
 }
