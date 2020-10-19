@@ -9,7 +9,7 @@ import './cadastro.css'
 import api from '../../services/api'
 //import API from '../../services/api'
 
-import success from './assets/success.svg'
+import success from './assets/sucess.svg'
 
 
 

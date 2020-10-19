@@ -2,11 +2,15 @@ import React, { Component } from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import Form from 'react-bootstrap/Form';
+import Toast from 'react-bootstrap/Toast';
+import sucesso from './pages/cadastro/assets/sucess.svg'
+import './editar.css'
+
 import API from './services/api'
 export default class EditarEscola extends Component {
     constructor(props) {
         super(props)
-        this.state = { title: "", escolas: null, show: false, escolaSelecionada: null }
+        this.state = { title: "", escolas: null, show: false, escolaSelecionada: null, showToast: false }
         this.handleTitleChange = this.handleTitleChange.bind(this)
         this.pesquisar = this.pesquisar.bind(this)
         this.handleClose = this.handleClose.bind(this)
@@ -23,6 +27,10 @@ export default class EditarEscola extends Component {
         this.handleSelectedSocialReasonChange = this.handleSelectedSocialReasonChange.bind(this)
         this.handleSelectedCNPJChange = this.handleSelectedCNPJChange.bind(this)
         this.handleSelectedSanitaryDistrictChange = this.handleSelectedSanitaryDistrictChange.bind(this)
+        this.handleToast = this.handleToast.bind(this);
+    }
+    handleToast(event) {
+        this.setState({ showToast: !this.state.showToast });
     }
     selecionarEscola(escola) {
         let escolaTemp = Object.create(escola)
@@ -92,6 +100,8 @@ export default class EditarEscola extends Component {
         await API.put(`/institution/${this.state.escolaSelecionada.id}`, this.state.escolaSelecionada).then(
             (response) => {
                 console.log(response);
+                this.handleToast();
+                this.handleClose();
             }
         )
     }
@@ -133,25 +143,148 @@ export default class EditarEscola extends Component {
                         </Modal.Header>
                         <Modal.Body>
                             <Form>
-                                <Form.Group controlId="EditFormTitle">
+                                <Form.Group
+                                    controlId="EditFormTitle">
                                     <Form.Label>Título da Instituição</Form.Label>
-                                    <Form.Control type="text" placeholder="Insira o nome da instituição" name="title" value={this.state.escolaSelecionada.title} onChange={this.handleSelectedTitleChange} />
+                                    <Form.Control
+                                        type="text"
+                                        placeholder="Insira o nome da instituição"
+                                        name="title" value={this.state.escolaSelecionada.title}
+                                        onChange={this.handleSelectedTitleChange} />
                                 </Form.Group>
-                                <Form.Group controlId="EditFormPhone">
+                                <Form.Group
+                                    controlId="EditFormPhone">
                                     <Form.Label>Telefone da Instituição</Form.Label>
-                                    <Form.Control type="text" placeholder="Insira o nome da instituição" name="title" value={this.state.escolaSelecionada.phone} onChange={this.handleSelectedPhoneChange} />
+                                    <Form.Control
+                                        type="text"
+                                        placeholder="Insira o nome da instituição"
+                                        name="phone" value={this.state.escolaSelecionada.phone}
+                                        onChange={this.handleSelectedPhoneChange} />
+                                </Form.Group>
+                                <Form.Group
+                                    controlId="EditFormZip">
+                                    <Form.Label>
+                                        CEP da Instituição
+                                    </Form.Label>
+                                    <Form.Control
+                                        type="text"
+                                        placeholder="Insira o cep da instituição"
+                                        value={this.state.escolaSelecionada.zip}
+                                        onChange={this.handleSelectedZipChange} />
+                                </Form.Group>
+                                <Form.Group
+                                    controlId="EditFormAddress">
+                                    <Form.Label>
+                                        Endereço da instituição
+                                    </Form.Label>
+                                    <Form.Control
+                                        type="text"
+                                        placeholder="Insira o endereço da instituição"
+                                        value={this.state.escolaSelecionada.address}
+                                        onChange={this.handleSelectedAddressChange} />
+                                </Form.Group>
+                                <Form.Group
+                                    controlId="EditFormNumber">
+                                    <Form.Label>
+                                        Número do endereço da instituição
+                                    </Form.Label>
+                                    <Form.Control
+                                        type="text"
+                                        placeholder="Insira o número do endereço da instituição"
+                                        value={this.state.escolaSelecionada.number}
+                                        onChange={this.handleSelectedNumberChange} />
+                                </Form.Group>
+                                <Form.Group
+                                    controlId="EditFormCity">
+                                    <Form.Label>
+                                        Cidade da instituição
+                                    </Form.Label>
+                                    <Form.Control
+                                        type="text"
+                                        placeholder="Insira a  cidade da Instituição"
+                                        value={this.state.escolaSelecionada.city}
+                                        onChange={this.handleSelectedCityChange} />
+                                </Form.Group>
+                                <Form.Group
+                                    controlId="EditFormState">
+                                    <Form.Label>
+                                        Estado da instituição
+                                    </Form.Label>
+                                    <Form.Control
+                                        type="text"
+                                        placeholder="Insira o Estado da Instituição"
+                                        value={this.state.escolaSelecionada.state}
+                                        onChange={this.handleSelectedStateChange} />
+
+                                </Form.Group>
+                                <Form.Group
+                                    controlId="EditFormSocialReason">
+                                    <Form.Label>
+                                        Razão social da instituição
+                                    </Form.Label>
+                                    <Form.Control
+                                        type="text"
+                                        placeholder="Insira a razão social da instituição"
+                                        value={this.state.escolaSelecionada.socialReason}
+                                        onChange={this.handleSelectedSocialReasonChange} />
+                                </Form.Group>
+                                <Form.Group
+                                    controlId="EditFormCPNJ">
+                                    <Form.Label>
+                                        CNPJ da instituição
+                                    </Form.Label>
+                                    <Form.Control
+                                        type="text"
+                                        placeholder="Insira o CNPJ da instituição"
+                                        value={this.state.escolaSelecionada.cnpj}
+                                        onChange={this.handleSelectedCNPJChange} />
+                                </Form.Group>
+                                <Form.Group
+                                    controlId="EditFormSanitaryDistrict">
+                                    <Form.Label>
+                                        Distrito Sanitário da Instituição
+                                    </Form.Label>
+                                    <Form.Control
+                                        type="text"
+                                        placeholder="Insira o distrito sanitário da instituição"
+                                        value={this.state.escolaSelecionada.sanitaryDistrict}
+                                        onChange={this.handleSelectedSanitaryDistrictChange} />
+
                                 </Form.Group>
                             </Form>
                         </Modal.Body>
                         <Modal.Footer>
-                            <Button variant="secondary" onClick={this.handleClose}>
+                            <Button
+                                variant="secondary"
+                                onClick={this.handleClose}>
                                 Cancelar
                         </Button>
-                            <Button variant="primary" onClick={this.updateInstitution}>
+                            <Button
+                                variant="primary"
+                                onClick={this.updateInstitution}>
                                 Salvar alterações
                         </Button>
                         </Modal.Footer>
-                    </Modal>}
+                    </Modal>
+                }
+                <Toast
+                    show={this.state.showToast}
+                    onClose={this.handleToast}
+                    delay={5000}
+                    autohide
+                    id="toast">
+                    <Toast.Header>
+                        <img
+                            src={sucesso}
+                            className="rounded mr-2"
+                            alt="ícone de sucesso"
+                            id="toastImg"
+                        />
+                        <strong
+                            className="mr-auto">Escola Atualizada com sucesso</strong>
+                    </Toast.Header>
+                    <Toast.Body>{this.state.escolaSelecionada != null && this.state.escolaSelecionada.title} foi editada</Toast.Body>
+                </Toast>
             </div>
         );
     }

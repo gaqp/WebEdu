@@ -1,0 +1,44 @@
+div#listaAlunos{
+    width: 95%;
+    height: 75vh;
+    margin: auto;
+    background-color: #EFEFEF;
+    border-radius: 20px;
+    padding:15px;
+    -webkit-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75);
+}
+div#listaAlunos span{
+    font-size: large;
+    color: gray;
+    margin-bottom: 20px;
+}
+div#lista{
+    background-color: white;
+    width: 100%;
+    height: 90%;
+    border-width: 1px;
+    border-style: groove;
+    padding: 10px;
+    overflow-y: scroll;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* IE 10+ */
+  
+}
+div#aluno{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+div#alunoNome{
+    color:gray;
+    font-size: large;
+}
+div#aluno div#stats img{
+    width:35px;
+    margin:3px;
+}

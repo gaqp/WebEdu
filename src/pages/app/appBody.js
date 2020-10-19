@@ -8,7 +8,7 @@ import './appBody.css';
 export default class AppBody extends Component {
     constructor(props) {
         super(props);
-        this.state = { perfil: "Administrador" }
+        this.state = { perfil: "Professor" }
     }
 
     render() {

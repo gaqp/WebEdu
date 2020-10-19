@@ -10,10 +10,13 @@ import edit_prof_educacao from '../assets/edit_prof_educacao.svg';
 import edit_prof_saude from '../assets/edit_prof_saude.svg'
 import edit_professor from '../assets/edit_professor.svg'
 
+import EditarEscola from '../../../editar'
+
 const opcoes = [
     {
         nome: "Escola",
-        logo: edit_escola
+        logo: edit_escola,
+        box: EditarEscola
     },
     {
         nome: "Professor",
@@ -55,8 +58,8 @@ export default () => {
                         </div>
                     )
                 }
-            )}
-        </div>
+                )}
+            </div>
         </div>
     )
 }

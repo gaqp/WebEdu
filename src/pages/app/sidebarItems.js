@@ -1,5 +1,7 @@
 import addComponent from './boxes/addComponent'
 import editComponent from './boxes/editComponent'
+import Acompanhamento from '../../Acompanhamento'
+import Aprovar from '../../aprovar'
 import adminIcon from './assets/adminIcon.svg';
 import adicionar from './assets/adicionar.svg';
 import editar from './assets/editar.svg';
@@ -49,11 +51,13 @@ const sidebarItems = {
         "items": [
             {
                 "name": "Acompanhamento",
-                "logo": adicionar
+                "logo": adicionar,
+                "component": Acompanhamento
             },
             {
                 "name": "Aprovar Atividades",
-                "logo": visto
+                "logo": visto,
+                "component": Aprovar
             },
             {
                 "name": "Notificações",
@@ -69,12 +73,12 @@ const sidebarItems = {
             }
         ]
     },
-    "ace":{
+    "ace": {
         "name": "Jovem ACE",
         "logo": jovemAce,
-        "items":[
+        "items": [
             {
-                "name":"Notificações",
+                "name": "Notificações",
                 "logo": notification
             },
             {
