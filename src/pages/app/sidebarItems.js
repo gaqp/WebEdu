@@ -2,13 +2,20 @@ import addComponent from './boxes/addComponent'
 import editComponent from './boxes/editComponent'
 import Acompanhamento from '../../Acompanhamento'
 import Aprovar from '../../aprovar'
+import Notifications from '../../notifications'
 import adminIcon from './assets/adminIcon.svg';
 import adicionar from './assets/adicionar.svg';
+import adicionarAtivo from './assets/adicionarAtivo.svg'
 import editar from './assets/editar.svg';
+import editarAtivo from './assets/editarAtivo.svg'
 import visto from './assets/visto.svg';
+import vistoAtivo from './assets/vistoAtivo.svg'
 import notification from './assets/notification.svg';
+import notificationAtivo from './assets/notificationAtivo.svg'
 import bar_chart from './assets/bar_chart.svg';
+import bar_chartAtivo from './assets/bar_chartAtivo.svg'
 import indicators from './assets/indicators.svg';
+import indicatorsAtivo from './assets/indicatorsAtivo.svg'
 import professor from './assets/professor.svg';
 import jovemAce from './assets/jovemAce.svg';
 
@@ -20,28 +27,37 @@ const sidebarItems = {
             {
                 "name": "Adicionar Componentes",
                 "logo": adicionar,
-                "component": addComponent
+                "component": addComponent,
+                "logoAtivo": adicionarAtivo
+
             },
             {
                 "name": "Editar Componentes",
                 "logo": editar,
-                "component": editComponent
+                "component": editComponent,
+                "logoAtivo": editarAtivo
             },
             {
                 "name": "Aprovar Atividades",
-                "logo": visto
+                "logo": visto,
+                "logoAtivo": adicionarAtivo
             },
             {
                 "name": "Notificações",
-                "logo": notification
+                "logo": notification,
+                "component": Notifications,
+                "logoAtivo": notificationAtivo
+
             },
             {
                 "name": "Consultar Ranking",
-                "logo": bar_chart
+                "logo": bar_chart,
+                "logoAtivo": bar_chartAtivo
             },
             {
                 "name": "Consultar Indicadores",
-                "logo": indicators
+                "logo": indicators,
+                "logoAtivo": indicatorsAtivo
             }
         ]
     },
@@ -52,24 +68,31 @@ const sidebarItems = {
             {
                 "name": "Acompanhamento",
                 "logo": adicionar,
-                "component": Acompanhamento
+                "component": Acompanhamento,
+                "logoAtivo": adicionarAtivo
             },
             {
                 "name": "Aprovar Atividades",
                 "logo": visto,
-                "component": Aprovar
+                "component": Aprovar,
+                "logoAtivo": vistoAtivo
             },
             {
                 "name": "Notificações",
-                "logo": notification
+                "logo": notification,
+                "component": Notifications,
+                "logoAtivo": notificationAtivo
+
             },
             {
                 "name": "Consultar Ranking",
-                "logo": bar_chart
+                "logo": bar_chart,
+                "logoAtivo": bar_chartAtivo
             },
             {
                 "name": "Consultar Indicadores",
-                "logo": indicators
+                "logo": indicators,
+                "logoAtivo": indicatorsAtivo
             }
         ]
     },
@@ -79,15 +102,20 @@ const sidebarItems = {
         "items": [
             {
                 "name": "Notificações",
-                "logo": notification
+                "logo": notification,
+                "component": Notifications,
+                "logoAtivo": notificationAtivo
+
             },
             {
                 "name": "Consultar Ranking",
-                "logo": bar_chart
+                "logo": bar_chart,
+                "logoAtivo": bar_chartAtivo    
             },
             {
                 "name": "Consultar Indicadores",
-                "logo": indicators
+                "logo": indicators,
+                "logoAtivo": indicatorsAtivo
             }
         ]
     }

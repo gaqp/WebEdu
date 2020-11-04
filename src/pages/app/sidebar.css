@@ -22,11 +22,14 @@
   padding: 10px;
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 700px) {
   #sidebar {
     width: 50px;
   }
-  #sidebar-option p {
+  #sidebar-menu{
+    overflow: hidden;
+  }
+  .sidebar-option p {
     visibility: hidden;
   }
 
@@ -51,14 +54,14 @@
   width: 100%;
   justify-items: center;
 }
-#sidebar-option img {
+.sidebar-option img {
   padding: 8px;
   width: 50px;
   height: 50px;
   margin-top: 50%;
   margin-bottom: 50%;
 }
-#sidebar-option {
+.sidebar-option {
   display: inline-flex;
   flex-direction: row;
   align-items: center;
@@ -66,15 +69,17 @@
   width: 100%;
   color: rgb(68, 151, 134);
 }
-#sidebar-option p {
+.sidebar-option p {
   padding-left: 5px;
   margin-top: 50%;
   margin-bottom: 50%;
 }
-#sidebar-option#selected {
-  background-color: #025c4f;
+.sidebar-option.selected {
+
+  background-color: rgba(11, 109, 89, 1);
+  color: #ffffff;
 }
-#sidebar-option:hover {
+.sidebar-option:hover {
   background-color: rgba(11, 109, 89, 1);
   color: #ffffff;
   transition-duration: 0.5s;

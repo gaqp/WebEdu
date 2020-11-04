@@ -1,0 +1,163 @@
+div#notificationBox {
+    background-color: #F7F7F7;
+    width: 90%;
+    height: 60vh;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    display: flex;
+    flex-direction: row;
+}
+
+div#notificationList {
+    width: 45%;
+    height: 90%;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 5px;
+    overflow-y: scroll;
+}
+
+div#notificationList::-webkit-scrollbar {
+    display: none;
+}
+
+div#chat {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 5px;
+    background-color: #E2E2E2;
+    min-height: 55px;
+}
+
+div#profileType {
+    
+    width: 50px;
+    height: 55px;
+    background-color: #9E9E9E;
+}
+
+@media only screen and (max-width: 470px) {
+    div#profileType {
+        display: none;
+    }
+}
+
+div#profileType img {
+    width: 50px;
+    padding: 5px;
+}
+
+div#name {
+    font-size: large;
+    font-weight: 300;
+    margin-left: 5px;
+}
+
+div#notificationChat {
+    width: 90%;
+    height: 90%;
+    margin-right: 10px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+div#notificationChatHistory {
+    width: 100%;
+    height: 80%;
+    margin-right: 10px;
+    margin-top: auto;
+    margin-bottom: auto;
+    background-color: #FFFFFF;
+    border: groove 1px
+}
+
+div#notificationChatInput {
+    width: 100%;
+    height: 20%;
+    margin-right: 10px;
+    margin-top: auto;
+    margin-bottom: auto;
+    border: groove 1px;
+    background-color: #FFFFFF;
+}
+
+div#notificationChatInput div#msgBox {
+    width: 100%;
+    height: 100%
+}
+
+div#notificationChatInput div#msgBox button {
+    width: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
+    border-radius: 20px;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+div#notificationChatInput div#msgBox input {
+    height: 100%;
+    border: none;
+}
+
+textarea.form-control {
+    resize: none;
+}
+
+.bubble-me {
+    position: relative;
+    background: #00aabb;
+    border-radius: .4em;
+}
+
+.bubble-me:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 20%;
+    width: 0;
+    height: 0;
+    border: 33px solid transparent;
+    border-left-color: #00aabb;
+    border-right: 0;
+    border-bottom: 0;
+    margin-top: -16.5px;
+    margin-right: -33px;
+}
+
+.bubble {
+    position: relative;
+    background: #00aabb;
+    border-radius: .4em;
+}
+
+.bubble:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 20%;
+    width: 0;
+    height: 0;
+    border: 33px solid transparent;
+    border-right-color: #00aabb;
+    border-left: 0;
+    border-bottom: 0;
+    margin-top: -16.5px;
+    margin-left: -33px;
+}
+
+Button.btn-primary {
+    background-color: #443B8A;
+    font-weight: bold;
+}
+
+Button.btn-primary:hover {
+    transition-duration: 0.5s;
+    background-color: #6d5fdb;
+}

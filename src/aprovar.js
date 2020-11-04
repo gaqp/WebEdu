@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Tab from 'react-bootstrap/Tab'
-import Tabs from 'react-bootstrap/tabs'
+import Tabs from 'react-bootstrap/Tabs'
+import QuizArbo from './quizArbo';
 export default class Aprovar extends Component {
     constructor(props) {
         super(props)
@@ -14,16 +15,16 @@ export default class Aprovar extends Component {
                     id="controlled-tab-example"
                 >
                     <Tab eventKey="quizArbo" title="QuizArbo">
-                        Teste QuizArbo
+                        <QuizArbo />
                     </Tab>
                     <Tab eventKey="patrulha" title="Patrulha em foco">
-                        Teste Patrulha em foco
+                        <QuizArbo />
                     </Tab>
                     <Tab eventKey="janelas" title="janelas&Tanques">
-                        Teste janelas e tanques
+                        <QuizArbo />
                     </Tab>
                     <Tab eventKey="reciclagem" title="Coleta&Reciclagem">
-                        Teste coleta e reciclagem
+                        <QuizArbo />
                     </Tab>
                 </Tabs>
             </div>

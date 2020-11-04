@@ -1,0 +1,169 @@
+div#aprovarTabela {
+    width: 100%;
+    height: 60vh;
+    background-color: white;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    display: flex;
+    flex-direction: column;
+}
+
+div#listagemAlunos {
+    width: 90%;
+    height: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow-x: auto;
+}
+
+div#alunoAprovar {
+    width: 250px;
+    height: 50px;
+    background-color: #E2E2E2;
+    margin-bottom: 5px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+div#profileTypeAprovar img {
+    width: 50px;
+    height: 100%;
+    padding: 10px;
+    background-color: #9E9E9E;
+}
+
+div#alunoAprovarPendente {
+    width: 250px;
+    height: 50px;
+    background-color: #D89E36;
+    margin-bottom: 5px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+div#alunoAprovarPendente>div#profileTypeAprovar img {
+    width: 50px;
+    height: 100%;
+    padding: 10px;
+    background-color: #D89E36;
+}
+
+div#alunoAprovarAvaliado {
+    width: 250px;
+    height: 50px;
+    background-color: #35A590;
+    margin-bottom: 5px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+div#alunoAprovarReprovado>div#profileTypeAprovar img {
+    width: 50px;
+    height: 100%;
+    padding: 10px;
+    background-color: #E55648;
+}
+
+div#alunoAprovarReprovado {
+    width: 250px;
+    height: 50px;
+    background-color: #E55648;
+    margin-bottom: 5px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+div#alunoAprovarAvaliado>div#profileTypeAprovar img {
+    width: 50px;
+    height: 100%;
+    padding: 10px;
+    background-color: #35A590;
+}
+
+div#alunoAprovarNome {
+    align-self: center;
+    margin-left: 5px;
+    font-size: larger;
+    font-weight: 300;
+    color: white
+}
+
+div#alunoAprovar>div#alunoAprovarNome {
+    align-self: center;
+    margin-left: 5px;
+    font-size: larger;
+    font-weight: 300;
+    color: black
+}
+
+div#legendaAprovar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 20px;
+}
+
+div#legendaAprovar>div#aval {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-right: 10px;
+}
+
+div#aval>div#quadAval {
+    width: 15px;
+    height: 15px;
+    background-color: #35A590;
+}
+
+div#legendaAprovar>div#pend {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-right: 10px;
+}
+
+div#pend>div#quadPend {
+    width: 15px;
+    height: 15px;
+    background-color: #D89E36;
+}
+
+div#legendaAprovar>div#inex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-right: 10px;
+}
+
+div#inex>div#quadInex {
+    width: 15px;
+    height: 15px;
+    background-color: #9E9E9E;
+}
+
+div#legendaAprovar>div#rep {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-right: 10px;
+}
+
+div#rep>div#quadRep {
+    width: 15px;
+    height: 15px;
+    background-color: #E55648;
+}

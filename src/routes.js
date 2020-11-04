@@ -5,8 +5,6 @@ import { HashRouter, Switch, Route } from "react-router-dom";
 import Home from "./pages/home/home.js";
 import AppBody from './pages/app/appBody';
 import Sidebar from "./pages/app/sidebar.js";
-
-
 const Routes = () => {
   return (
     <HashRouter basename='/'>
