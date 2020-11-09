@@ -26,7 +26,7 @@ export default class Notifications extends Component {
         return (
             <div>
                 <div>
-                    <h1 id="addBlockTitle">Avalie as atividades dos seus alunos:</h1>
+                    <h1 id="addBlockTitle">Escolha com quem deseja conversar:</h1>
                 </div>
                 <div id="notificationBox">
                     <div id="notificationList">

@@ -1,3 +1,7 @@
+.navbar-nav {
+    display: inherit !important;
+}
+
 #homeNavbar.navbar {
     background: url('./assets/background_nav.svg');
     background-size: cover;
