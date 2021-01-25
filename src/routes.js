@@ -5,6 +5,7 @@ import { HashRouter, Switch, Route } from "react-router-dom";
 import Home from "./pages/home/home.js";
 import AppBody from './pages/app/appBody';
 import Sidebar from "./pages/app/sidebar.js";
+import {RankingPesquisa} from './ranking.js';
 const Routes = () => {
   return (
     <HashRouter basename='/'>
@@ -39,6 +40,8 @@ const Routes = () => {
         <Route path="/sidebar"
           render={(props) => <Sidebar {...props} type="admin" />}
         />
+        <Route path="/rankingPesquisa" component={RankingPesquisa} />
+
       </Switch>{" "}
     </HashRouter>
   );

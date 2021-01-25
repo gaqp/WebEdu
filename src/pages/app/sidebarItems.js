@@ -1,6 +1,7 @@
 import addComponent from './boxes/addComponent'
 import editComponent from './boxes/editComponent'
 import Acompanhamento from '../../Acompanhamento'
+import Ranking from '../../ranking'
 import Aprovar from '../../aprovar'
 import Notifications from '../../notifications'
 import adminIcon from './assets/adminIcon.svg';
@@ -52,7 +53,8 @@ const sidebarItems = {
             {
                 "name": "Consultar Ranking",
                 "logo": bar_chart,
-                "logoAtivo": bar_chartAtivo
+                "logoAtivo": bar_chartAtivo,
+                "component":Ranking
             },
             {
                 "name": "Consultar Indicadores",

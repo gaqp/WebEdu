@@ -1,0 +1,61 @@
+.rankingContainer{
+    background: -webkit-linear-gradient(340deg, rgb(114, 164, 137) 50%, rgb(99, 179, 118) 78%);
+    background: -o-linear-gradient(340deg, rgb(114, 164, 137) 50%, rgb(99, 179, 118) 78%);
+    background: -ms-linear-gradient(340deg, rgb(114, 164, 137) 50%, rgb(99, 179, 118) 78%);
+    background: -moz-linear-gradient(340deg, rgb(114, 164, 137) 50%, rgb(99, 179, 118) 78%);
+    background: linear-gradient(110deg, rgb(114, 164, 137) 50%, rgb(99, 179, 118) 78%);
+
+}
+.whiteText{
+    color: #FDFFFC;
+}
+.alunoDestaqueImagem{
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    border-width: 3px;
+    border-style: solid;
+    border-color: white;
+}
+@media only screen and (max-width: 470px) {
+    .alunoDestaqueImagem{
+        height: 150px;
+        width: 150px;
+    }
+}.alunoDestaqueNome{
+    font-weight: bold;
+    font-size: 2rem;
+    color: #FDFFFC;
+}
+.rankingAlunoName,.rankingEscolaName,.pontDesafiosName{
+    background-color: white;
+}
+
+.rankingAlunoTitle,.rankingEscolaTitle,.pontDesafiosTitle{
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.rankingNumberName,.rankingNumberEscola{
+    font-size: x-large;
+    font-weight: bold;
+    color:#464646;
+
+}
+.rankingAlunoName,.rankingEscolaName{
+    font-size: x-large;
+    font-weight: 400;
+    color:#767676;
+}
+.rankingPontuacao{
+    font-size: large;
+    font-weight: 400;
+    color:#767676;
+}
+
+.searchBox{
+    width: 100%;
+    max-width: 700px;
+}
+.searchBox>input{
+    width: 90%;
+}
