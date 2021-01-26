@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import './ranking.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faSearch } from '@fortawesome/free-solid-svg-icons';
+import { faArrowRight, faSearch } from '@fortawesome/free-solid-svg-icons';
 
 export default class Ranking extends Component {
     constructor(props) {
@@ -64,7 +64,13 @@ export class RankingPesquisa extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            pesquisa: ""
+            pesquisa: "",
+            entidades: [
+                { nome: "João Victor", ranking: 6, tipo: "Aluno" },
+                { nome: "João das Neves", ranking: 10, tipo: "Aluno" },
+                { nome: "Escola João e Maria", ranking: 90, tipo: "Escola" }
+            ],
+            pesquisaResultado: null
         }
         this.handlePesquisaChange = this.handlePesquisaChange.bind(this);
         this.handleSearchClick = this.handleSearchClick.bind(this);
@@ -72,19 +78,55 @@ export class RankingPesquisa extends Component {
     handlePesquisaChange(event) {
         this.setState({ pesquisa: event.target.value });
     }
-    handleSearchClick(event){
-        console.log(this.state.pesquisa);
+    handleSearchClick(event) {
+        this.setState({ pesquisaResultado: this.state.pesquisa });
     }
 
     render() {
         return (
-            <div className="container">
-                <div className="searchBox">
-                    <input type="text" className="rankingSearch" value={this.state.pesquisa} onChange={this.handlePesquisaChange}></input>
-                    <FontAwesomeIcon className="ml-3 clickable" icon={faSearch} onClick={this.handleSearchClick}/>
-                </div>
-                <div className="searchResults">
-                    Nothing
+            <div>
+                <h1
+                    className="sectionTitle">
+                    Consultar ranking de estudante ou escola:
+                </h1>
+                <div className="container">
+                    <div className="searchBox">
+                        <input
+                            type="text"
+                            className="rankingSearch"
+                            placeholder="Exemplo: João das Neves, Escola Municipal João Carpinteiro"
+                            value={this.state.pesquisa}
+                            onChange={this.handlePesquisaChange}
+                            onKeyPress={
+                                (event) => {
+                                    if (event.key === 'Enter') {
+                                        this.handleSearchClick()
+                                    }
+                                }
+                            }
+                        ></input>
+                        <FontAwesomeIcon className="ml-3 clickable" icon={faSearch} onClick={this.handleSearchClick} />
+                    </div>
+                    <div className="searchResults">
+                        {this.state.pesquisaResultado === null && <div> </div>}
+
+                        {this.state.pesquisaResultado != null && this.state.pesquisaResultado !== "" &&
+                            this.state.entidades.map(
+                                (resultado) => {
+                                    return (
+                                        <div className="d-flex resultCard mt-3 pl-3 pr-3" key={resultado.nome}>
+                                            <p className="text-center">{resultado.nome}</p>
+                                            <div className="d-flex resultOptions">
+                                                <p className="text-center">{resultado.ranking}º</p>
+                                                <FontAwesomeIcon className="ml-3 clickable" icon={faArrowRight} onClick={this.handleSearchClick} />
+                                            </div>
+
+                                        </div>
+                                    )
+                                }
+                            )
+                        }
+                    </div>
                 </div>
             </div>
         )

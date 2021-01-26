@@ -1,3 +1,9 @@
 .clickable{
     cursor:pointer;
 }
+.sectionTitle{
+    color: rgb(68,151,134);
+    width: 90%;
+    margin-left: 5px;
+    margin-bottom: 15px;
+}
