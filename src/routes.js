@@ -38,7 +38,7 @@ const Routes = () => {
         />
         <Route path="/app" component={AppBody} />
         <Route path="/sidebar"
-          render={(props) => <Sidebar {...props} type="admin" />}
+          render={(props) => <Sidebar {...props} type="Professor" />}
         />
         <Route path="/rankingPesquisa" component={RankingPesquisa} />
 

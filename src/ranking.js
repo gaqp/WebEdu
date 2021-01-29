@@ -14,11 +14,11 @@ export default class Ranking extends Component {
             escolaPos: 12,
             escolaNome: "EREM - Professora Amarina Simões",
             pontuacoes: [
-                { nome: "QuizZika", pontuacao: 100 },
-                { nome: "PatrulhaZica", pontuacao: 51 },
+                { nome: "QuizArbo", pontuacao: 100 },
+                { nome: "Patrulha em Foco", pontuacao: 51 },
                 { nome: "Janelas & Tanques", pontuacao: 42 },
                 { nome: "Coleta & Reciclagem", pontuacao: 150 },
-                { nome: "TeamZica", pontuacao: 20 }
+                { nome: "Arbo Turma", pontuacao: 20 }
 
             ]
         };
@@ -32,7 +32,7 @@ export default class Ranking extends Component {
                 </div>
                 <div className="rankings">
                     <div className="rankingAluno">
-                        <div className="rankingAlunoTitle mb-3 whiteText">Raking do aluno</div>
+                        <div className="rankingAlunoTitle mb-3 whiteText">Ranking do aluno</div>
                         <p className="rankingAlunoName mb-3"><span className="rankingNumberName">{this.state.alunoPos}º</span> {this.state.nome}</p>
                     </div>
                     <div className="rankingEscolar">
