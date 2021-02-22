@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "55d3cdbabce41ceef0d24b2b3d16d352",
+    "revision": "3c754d73a96f7eaeaaf40601a8d4532b",
     "url": "/WebEdu/index.html"
   },
   {
-    "revision": "a78ba163f9366d91c82b",
+    "revision": "c322f94055bd0c806a0d",
     "url": "/WebEdu/static/css/2.43079d8c.chunk.css"
   },
   {
-    "revision": "6b148c10d4108e89d0d7",
-    "url": "/WebEdu/static/css/main.f81b6584.chunk.css"
+    "revision": "c961153e6d52c88e51d3",
+    "url": "/WebEdu/static/css/main.775c9e0a.chunk.css"
   },
   {
-    "revision": "a78ba163f9366d91c82b",
-    "url": "/WebEdu/static/js/2.8c1bc5b9.chunk.js"
+    "revision": "c322f94055bd0c806a0d",
+    "url": "/WebEdu/static/js/2.b0a6717e.chunk.js"
   },
   {
-    "revision": "cacaf3f01dd3bd8237006f7c58951c1c",
-    "url": "/WebEdu/static/js/2.8c1bc5b9.chunk.js.LICENSE.txt"
+    "revision": "65a2fea94a8f6760b7cb11b7e71f6132",
+    "url": "/WebEdu/static/js/2.b0a6717e.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "6b148c10d4108e89d0d7",
-    "url": "/WebEdu/static/js/main.bb179516.chunk.js"
+    "revision": "c961153e6d52c88e51d3",
+    "url": "/WebEdu/static/js/main.56257078.chunk.js"
   },
   {
     "revision": "fcb4e340ee8d5bdcb155",
@@ -60,8 +60,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/WebEdu/static/media/adicionar.53fa7969.svg"
   },
   {
-    "revision": "3be1de676614a30ee61eedef5ad5e300",
-    "url": "/WebEdu/static/media/adicionarAtivo.3be1de67.svg"
+    "revision": "f27329c23dba7c60b41244360850ce0f",
+    "url": "/WebEdu/static/media/adicionarAtivo.f27329c2.svg"
   },
   {
     "revision": "2433ccfe833d132bde3faed0d90cf65e",
@@ -180,8 +180,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/WebEdu/static/media/sucess.c1a46c5c.svg"
   },
   {
-    "revision": "60406355e1d43044f7eb6d18d706dde5",
-    "url": "/WebEdu/static/media/user.60406355.svg"
+    "revision": "6cf8e09504cdf552fc439168ac7acfa0",
+    "url": "/WebEdu/static/media/user.6cf8e095.svg"
   },
   {
     "revision": "9ae9df2d2936dec78455c614b4b3e060",

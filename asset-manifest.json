@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/WebEdu/static/css/main.f81b6584.chunk.css",
-    "main.js": "/WebEdu/static/js/main.bb179516.chunk.js",
-    "main.js.map": "/WebEdu/static/js/main.bb179516.chunk.js.map",
+    "main.css": "/WebEdu/static/css/main.775c9e0a.chunk.css",
+    "main.js": "/WebEdu/static/js/main.56257078.chunk.js",
+    "main.js.map": "/WebEdu/static/js/main.56257078.chunk.js.map",
     "runtime-main.js": "/WebEdu/static/js/runtime-main.3510dfe3.js",
     "runtime-main.js.map": "/WebEdu/static/js/runtime-main.3510dfe3.js.map",
     "static/css/2.43079d8c.chunk.css": "/WebEdu/static/css/2.43079d8c.chunk.css",
-    "static/js/2.8c1bc5b9.chunk.js": "/WebEdu/static/js/2.8c1bc5b9.chunk.js",
-    "static/js/2.8c1bc5b9.chunk.js.map": "/WebEdu/static/js/2.8c1bc5b9.chunk.js.map",
+    "static/js/2.b0a6717e.chunk.js": "/WebEdu/static/js/2.b0a6717e.chunk.js",
+    "static/js/2.b0a6717e.chunk.js.map": "/WebEdu/static/js/2.b0a6717e.chunk.js.map",
     "index.html": "/WebEdu/index.html",
-    "precache-manifest.57d4a3776ff1a2e05b2a3bfbd894db21.js": "/WebEdu/precache-manifest.57d4a3776ff1a2e05b2a3bfbd894db21.js",
+    "precache-manifest.7a89f09604ac5b1ffb280d52c8245bb5.js": "/WebEdu/precache-manifest.7a89f09604ac5b1ffb280d52c8245bb5.js",
     "service-worker.js": "/WebEdu/service-worker.js",
     "static/css/2.43079d8c.chunk.css.map": "/WebEdu/static/css/2.43079d8c.chunk.css.map",
-    "static/css/main.f81b6584.chunk.css.map": "/WebEdu/static/css/main.f81b6584.chunk.css.map",
-    "static/js/2.8c1bc5b9.chunk.js.LICENSE.txt": "/WebEdu/static/js/2.8c1bc5b9.chunk.js.LICENSE.txt",
+    "static/css/main.775c9e0a.chunk.css.map": "/WebEdu/static/css/main.775c9e0a.chunk.css.map",
+    "static/js/2.b0a6717e.chunk.js.LICENSE.txt": "/WebEdu/static/js/2.b0a6717e.chunk.js.LICENSE.txt",
     "static/media/add_desafios.svg": "/WebEdu/static/media/add_desafios.90d47a30.svg",
     "static/media/add_escola.svg": "/WebEdu/static/media/add_escola.d1ee6ad5.svg",
     "static/media/add_jovemACE.svg": "/WebEdu/static/media/add_jovemACE.b4372b3d.svg",
@@ -22,7 +22,7 @@
     "static/media/add_prof_saude.svg": "/WebEdu/static/media/add_prof_saude.9d40890e.svg",
     "static/media/add_professor.svg": "/WebEdu/static/media/add_professor.e913a1dc.svg",
     "static/media/adicionar.svg": "/WebEdu/static/media/adicionar.53fa7969.svg",
-    "static/media/adicionarAtivo.svg": "/WebEdu/static/media/adicionarAtivo.3be1de67.svg",
+    "static/media/adicionarAtivo.svg": "/WebEdu/static/media/adicionarAtivo.f27329c2.svg",
     "static/media/adminIcon.svg": "/WebEdu/static/media/adminIcon.2433ccfe.svg",
     "static/media/atv_off.svg": "/WebEdu/static/media/atv_off.628808ad.svg",
     "static/media/atv_on.svg": "/WebEdu/static/media/atv_on.47327030.svg",
@@ -52,15 +52,15 @@
     "static/media/stats_off.svg": "/WebEdu/static/media/stats_off.00cf1d5e.svg",
     "static/media/stats_on.svg": "/WebEdu/static/media/stats_on.482e7b35.svg",
     "static/media/sucess.svg": "/WebEdu/static/media/sucess.c1a46c5c.svg",
-    "static/media/user.svg": "/WebEdu/static/media/user.60406355.svg",
+    "static/media/user.svg": "/WebEdu/static/media/user.6cf8e095.svg",
     "static/media/visto.svg": "/WebEdu/static/media/visto.9ae9df2d.svg",
     "static/media/vistoAtivo.svg": "/WebEdu/static/media/vistoAtivo.5b69cb73.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.3510dfe3.js",
     "static/css/2.43079d8c.chunk.css",
-    "static/js/2.8c1bc5b9.chunk.js",
-    "static/css/main.f81b6584.chunk.css",
-    "static/js/main.bb179516.chunk.js"
+    "static/js/2.b0a6717e.chunk.js",
+    "static/css/main.775c9e0a.chunk.css",
+    "static/js/main.56257078.chunk.js"
   ]
 }
