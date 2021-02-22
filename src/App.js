@@ -1,5 +1,4 @@
 import React from 'react';
-
 import Routes from './routes.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./app.css";
@@ -10,6 +9,7 @@ import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 
 
 library.add(fab, faSearch,faArrowRight);
+require('dotenv').config()
 
 function App() {
 

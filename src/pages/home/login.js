@@ -48,7 +48,7 @@ export default class Login extends Component {
 
         return (
             <React.Fragment>
-                <Form onSubmit={this.handleSubmit} action="https://backedu.azurewebsites.net/signin" method="POST" >
+                <Form onSubmit={this.handleSubmit} action={`${process.env.REACT_APP_BACKEND_PATH}/signin`} method="POST" >
                     <Form.Group controlId="formBasicEmail">
                         <Form.Control type="email" placeholder="Login" value={this.state.email} onChange={this.handleChange} name='email' />
                     </Form.Group>
